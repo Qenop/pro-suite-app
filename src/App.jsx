@@ -1,6 +1,6 @@
 //src\App.jsx
 import React, { Suspense, lazy } from "react";
-import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout"; // header & footer
 import DashboardLayout from "./layouts/DashboardLayout"; //for sidebar
 import SimpleLayout from "./layouts/SimpleLayout";
@@ -36,7 +36,7 @@ const UsersTab = lazy(() => import("./pages/tabs/UsersTab"));
 
 function App() {
   return (
-    <HashRouter>
+    <Router basename="/pro-suite-app">
       <Suspense fallback={<div className="p-4">Loading tab...</div>}>
         <Routes>
           {/* Public Layout */}
@@ -89,7 +89,7 @@ function App() {
           </Route>
         </Routes>
       </Suspense>
-    </HashRouter>
+    </Router>
   );
 }
 
