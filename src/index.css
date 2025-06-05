@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: keep or remove the existing styles below */
+/*:root {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 500;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+/* ... rest of the CSS ... */
