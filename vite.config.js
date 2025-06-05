@@ -11,11 +11,12 @@ export default defineConfig(({ command }) => {
   if (isBuild) console.log('Including visualizer plugin...');
 
   return {
+    base: '/pro-suite-app/',  // Add this line here
     plugins: [
       react(),
       ...(isBuild ? [visualizer({
         filename: 'bundle-analysis.html',
-        open: false,  // set false to avoid auto open for now
+        open: false,
         gzipSize: true,
         brotliSize: true,
       })] : []),

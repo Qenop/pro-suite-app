@@ -36,7 +36,7 @@ const UsersTab = lazy(() => import("./pages/tabs/UsersTab"));
 
 function App() {
   return (
-    <Router>
+    <Router basename="/pro-suite-app">
       <Suspense fallback={<div className="p-4">Loading tab...</div>}>
         <Routes>
           {/* Public Layout */}
