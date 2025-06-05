@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div
       className="relative min-h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/assets/pro.jpg')" }} // Use public/assets folder
+      style={{ backgroundImage: "url('./assets/pro.jpg')" }} // Use public/assets folder
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-gray-400 bg-opacity-80" />
