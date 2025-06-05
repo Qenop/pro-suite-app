@@ -1,7 +1,7 @@
 // api\axiosInstance.js
 import axios from 'axios';
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:5000/api', // or your backend URL
+  baseURL: 'https://pro-suite-backend.onrender.com/api', // or your backend URL
 });
 
 // Add JWT token to every request if available
