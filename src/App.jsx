@@ -36,7 +36,7 @@ const UsersTab = lazy(() => import("./pages/tabs/UsersTab"));
 
 function App() {
   return (
-    <Router basename="/pro-suite-app">
+    <HashRouter>
       <Suspense fallback={<div className="p-4">Loading tab...</div>}>
         <Routes>
           {/* Public Layout */}
@@ -89,7 +89,7 @@ function App() {
           </Route>
         </Routes>
       </Suspense>
-    </Router>
+    </HashRouter>
   );
 }
 
