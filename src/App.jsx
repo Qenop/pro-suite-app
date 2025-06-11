@@ -1,6 +1,6 @@
 //src\App.jsx
 import React, { Suspense, lazy } from "react";
-import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout"; // header & footer
 import DashboardLayout from "./layouts/DashboardLayout"; //for sidebar
 import SimpleLayout from "./layouts/SimpleLayout";
